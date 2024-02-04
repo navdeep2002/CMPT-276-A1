@@ -31,9 +31,10 @@ const quizData = [
 let currentQuestion = 0;
 let userAnswers = [];
 
-//show questions and options at the start of
+// Show questions and options at the start of the quiz
 displayQuestion();
-function displayQuestion(){
+
+function displayQuestion() {
     const questionContainer = document.getElementById("question-container");
     const currentQuizData = quizData[currentQuestion];
 
@@ -51,15 +52,15 @@ function displayQuestion(){
 }
 
 updateSubmitButton();
-function updateSubmitButton(){
+
+function updateSubmitButton() {
     const submitButton = document.getElementById("submit-button");
-    if(currentQuestion === quizData.length - 1){
+    if (currentQuestion === quizData.length - 1) {
         submitButton.innerHTML = "Submit";
-    }else{
+    } else {
         submitButton.innerHTML = "Next";
     }
 }
-
 
 function loadQuestion() {
     const questionContainer = document.getElementById("question-container");
@@ -77,7 +78,6 @@ function loadQuestion() {
         </form>
     `;
 }
-
 
 function prevQuestion() {
     currentQuestion--; // Decrement the current question index
@@ -103,7 +103,6 @@ function nextQuestion() {
     }
 }
 
-
 function selectAnswer(answer) {
     userAnswers[currentQuestion] = answer;
     // Add feedback logic if desired (e.g., highlighting selected answer)
@@ -118,7 +117,6 @@ function submitQuiz() {
         alert("Please answer all questions before submitting.");
     }
 }
-
 
 function showResults() {
     const resultsContainer = document.getElementById("results-container");
