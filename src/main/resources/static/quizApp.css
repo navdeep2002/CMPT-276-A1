@@ -1,0 +1,73 @@
+/* Styles for the body element */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #547ef3;
+}
+
+/* Styles for the container element */
+.container {
+    max-width: 1300px;
+    margin: 75px auto;
+    padding: 50px;
+    border: 5px solid;
+    background-color: #a0d8a3;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles for the h1 element */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 45px;
+}
+
+/* Styles for the quiz container */
+#quiz-container {
+    padding: 15px;
+    border: 5px solid;
+    background-color: #dd7272;
+    font-size: 20px;
+}
+/* #ddd; */
+
+/* Styles for the question container */
+#question-container {
+    margin-bottom: 60px;
+    
+}
+
+/* Styles for the navigation container */
+#navigation-container {
+    text-align: center;
+}
+
+/* Styles for buttons */
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Styles for button hover effect */
+button:hover {
+    background-color: #14d33d;
+}
+
+/* Styles for the results container */
+#results-container {
+    display: none;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #2bdbb5;
+    border: 5px solid #000000;
+}
+
+/* Styles for the selected option */
+.selected {
+    background-color: rgb(255, 255, 255);
+}
+
